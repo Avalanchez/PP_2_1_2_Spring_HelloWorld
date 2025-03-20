@@ -7,6 +7,7 @@ public class AppConfig {
  
     @Bean(name="helloworld")
     @Scope("singleton")
+//    @Scope("prototype")
     public HelloWorld getHelloWorld() {
         HelloWorld helloWorld = new HelloWorld();
         helloWorld.setMessage("Hello World!");
